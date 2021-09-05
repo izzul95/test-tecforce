@@ -1,0 +1,26 @@
+entity Blog {
+  name String required minlength(3),
+  positive Boolean required
+}
+
+enum Emoji {
+    LIKE, HAHA, WOW, SAD, ANGRY
+}
+
+entity Entry {
+  title String required,
+  emoji Emoji required,
+  content TextBlob required
+}
+
+relationship ManyToOne {
+  Blog{user(login)} to User
+}
+
+relationship OneToMany {
+  Blog{entry} to Entry{blog}
+}
+
+paginate Entry with infinite-scroll
+dto * with mapstruct
+service * with serviceClass

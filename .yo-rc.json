@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.tecforte.blog"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "blog",
+    "packageName": "com.tecforte.blog",
+    "packageFolder": "com/tecforte/blog",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDZiMGY4NDRmOTlmYmEzYzY3YjZmMjQ0OGQyNTBmMTQzMzk3ZTI4N2E3NzhjZTViZmQyNmE2YzkxNTg1ZWVjYjgwZjQzMDQyNjM4YTVmM2Y3MGJlZjI5OWY0ZDE2NjNjNDZmZDMxZTMwOWEwYWEyNGUxY2JmZmNiOGVkMGQ2Mjc=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

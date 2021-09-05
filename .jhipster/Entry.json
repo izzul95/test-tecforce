@@ -1,0 +1,46 @@
+{
+    "name": "Entry",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "emoji",
+            "fieldType": "Emoji",
+            "fieldValues": "LIKE,HAHA,WOW,SAD,ANGRY",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "content",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "blog",
+            "otherEntityRelationshipName": "entry",
+            "relationshipName": "blog",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200623050628",
+    "entityTableName": "entry",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
